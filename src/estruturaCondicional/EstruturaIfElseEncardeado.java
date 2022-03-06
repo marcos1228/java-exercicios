@@ -2,7 +2,7 @@ package estruturaCondicional;
 
 import java.util.Scanner;
 
-public class EstruturaSwitchCase {
+public class EstruturaIfElseEncardeado {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("informe um número");
@@ -30,12 +30,12 @@ public class EstruturaSwitchCase {
 							} else
 								dia = "valor invalido";
 						}
-						
+
 					}
-					
+
 				}
 			}
-			
+
 		}
 		System.out.println("O DIA DA SEMANA é: " + dia);
 		scanner.close();
