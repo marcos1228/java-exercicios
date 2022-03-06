@@ -10,14 +10,8 @@ public class ExpressaoCondicionalTernaria {
 		 */
 		System.out.println("Informe o valor do preço");
 		double preco = scanner.nextDouble();
-		double desconto;
 		double resultado;
-		if (preco < 20.0) {
-			desconto = preco * 0.1;
-		} else {
-			desconto = preco * 0.85;
-		}
-
+		double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.85;
 		resultado = preco - desconto;
 		System.out.println("O desconto foi de R$ =" + desconto + "O Preco final é R$= " + resultado);
 		scanner.close();
