@@ -24,15 +24,15 @@ public class EstruturaRepetitivaDoWhile {
 		/* Primeiro resolver o problema utilizando do while */
 		Locale.setDefault(Locale.US);
 		Scanner scanner = new Scanner(System.in);
-		char resp = 's';
-		while (resp != 'n') {
+		char resp;
+		do {
 			System.out.println("Digite a temperatura em celsius: ");
 			double C = scanner.nextDouble();
 			double F = 9.0 * C / 5.0 + 32;
 			System.out.printf("Equivalente em Fahrenheit :%.1f%n", F);
 			System.out.print("Deseja repetir (s/n) ?");
-			resp = scanner.next().charAt(0);
-		}
+			 resp = scanner.next().charAt(0);
+		} while (resp != 'n');
 		scanner.close();
 	}
 }
