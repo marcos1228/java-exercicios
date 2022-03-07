@@ -21,19 +21,14 @@ public class EstruturaRepetitivaDoWhile {
 	 * Fórmula: F 9c / 5 + 32
 	 */
 	public static void main(String[] args) {
-		/* Primeiro resolver o problema utilizando while */
+		/* Primeiro resolver o problema utilizando do while */
 		Locale.setDefault(Locale.US);
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Digite a temperatura em celsius: ");
-		double C = scanner.nextDouble();
-		double F = 9.0 * C / 5.0 + 32;
-		System.out.printf("Equivalente em Fahrenheit :%.1f%n", F);
-		System.out.print("Deseja repetir (s/n) ?");
-		char resp = scanner.next().charAt(0);
+		char resp = 's';
 		while (resp != 'n') {
 			System.out.println("Digite a temperatura em celsius: ");
-			C = scanner.nextDouble();
-			F = 9.0 * C / 5.0 + 32;
+			double C = scanner.nextDouble();
+			double F = 9.0 * C / 5.0 + 32;
 			System.out.printf("Equivalente em Fahrenheit :%.1f%n", F);
 			System.out.print("Deseja repetir (s/n) ?");
 			resp = scanner.next().charAt(0);
