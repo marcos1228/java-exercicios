@@ -4,10 +4,9 @@ import java.math.BigDecimal;
 
 public class Programin {
 	public static void main(String[] args) {
-		Product[100] product = new Product();
-		product.setId(1l);
-		product.setNome("Macarrão");
-		product.setValor(new BigDecimal(1));
+		Product product = new Product(1l, "Macarrão", new BigDecimal(1l));
+		Product product1 = new Product(2l, "Macarrão", new BigDecimal(1l));
+
 		System.out.println(product.getNome());
 	}
 }
